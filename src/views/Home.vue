@@ -17,7 +17,7 @@ export default {
 
     methods:{
         getCharacters: function(){
-            axios.get(`http://gateway.marvel.com/v1/public/chararcters?apikey=${public_key}&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/chararcters?apikey=${public_key}`)
         }
     }
 }
