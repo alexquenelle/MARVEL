@@ -34,7 +34,7 @@ export default {
     methods: {
         getCharacter: function(){
             var characterId = this.$route.params.id
-            axios.get(`http://gateway.marvel.com/v1/public/characters/${characterId}?apikey=${public_key}`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters/${characterId}?apikey=c2a8bc81cffc0beb1b454edba897c69d`)
             .then((result) => {
                 console.log(result)
                 result.data.data.results.forEach((item) => {

@@ -39,105 +39,105 @@ export default {
      methods:{
         getCharacters: function(){
             var search = this.search
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=1300&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=1300&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=1200&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=1200&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=1100&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=1100&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=1000&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=1000&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=1200&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=1200&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=900&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=900&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=800&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=800&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=700&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=700&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=600&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=600&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=500&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=500&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=400&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=400&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=300&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=300&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=200&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=200&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=100&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=100&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
                     this.characters.push(item)
                 })
             })
-            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=${public_key}&offset=0&limit=100`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters?apikey=c2a8bc81cffc0beb1b454edba897c69d&offset=0&limit=100`)
             .then((result) => {
                 result.data.data.results.forEach((item) => {
                     console.log(item)
