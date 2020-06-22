@@ -4,6 +4,7 @@
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
     </div>
+    <img src="../marvel_logo.png" alt="Logo marvel" width="300">
     <router-view/>
     </div>
 </template>
@@ -15,6 +16,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    background-color: grey;
 }
 
 #nav {
@@ -27,6 +29,7 @@
 }
 
 #nav a.router-link-exact-active {
-    color: #42b983;
+    color: white;
+    font-family: 'Lucida Console', Monaco, monospace;
 }
 </style>

@@ -1,14 +1,17 @@
 <template lang="html">
-    <div class="">
-        <h3>hello this is chararcter.vue</h3>
-        <p>{{ this.$route.params.id }}</p>
-        <ul>
-            <li v-for="char in character">
-                {{char.name}}
-                {{char.description}}
-            </li>
-        </ul>
-        <img :src="url" alt="">
+    <div>
+        <div class="content">
+            <div v-for="char in character">
+                <h3>{{char.name}}</h3>
+                <p>{{char.description}}</p>
+            </div>
+        </div>
+        <img :src="url" alt="" class="image">
+            <p><br></p>
+        <router-link class="back-button" to="/">
+                <a href="button" class="button1">Back</a>
+        </router-link>
+        <p><br><br></p>
     </div>
 </template>
 
@@ -23,7 +26,7 @@ export default {
         return{
             character: [],
             url: '',
-            size: 'standard_large.jpg',
+            size: 'standard_xlarge.jpg',
         }
     },
 
@@ -34,7 +37,7 @@ export default {
     methods: {
         getCharacter: function(){
             var characterId = this.$route.params.id
-            axios.get(`http://gateway.marvel.com/v1/public/characters/${characterId}?apikey=c2a8bc81cffc0beb1b454edba897c69d`)
+            axios.get(`http://gateway.marvel.com/v1/public/characters/${characterId}?apikey=${public_key}`)
             .then((result) => {
                 console.log(result)
                 result.data.data.results.forEach((item) => {
@@ -52,4 +55,15 @@ export default {
 </script>
 
 <style lang="css">
+
+.content{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    border-radius: 20px;
+}
 </style>
