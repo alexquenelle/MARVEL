@@ -7,15 +7,13 @@
             </div>
         </div>
         <img :src="url" alt="" class="image">
-            <p><br></p>
-        <router-link class="back-button" to="/">
-                <a href="button" class="button1">Back</a>
-        </router-link>
-        <p><br><br></p>
+            <br>
+        <button class="back-button"><router-link to="/" class="text">Back</router-link></button>
+        <br><br>
     </div>
 </template>
 
-<script>
+<script>    
 import {public_key} from '../marvel'
 import axios from 'axios'
 
@@ -65,5 +63,19 @@ export default {
 
 .image{
     border-radius: 20px;
+}
+
+.back-button {
+    margin-top: 40px;
+    border-radius: 25px;
+    background-color: grey;
+    font-size: 30px;
+    width: 300px;
+    border: 3px solid white
+}
+
+.text {
+    color: white;
+    font-family: 'Lucida Console', Monaco, monospace;
 }
 </style>

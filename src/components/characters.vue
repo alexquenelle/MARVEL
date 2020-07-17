@@ -6,9 +6,9 @@
         <div class="card-container">
             <div class="card" v-for="characters in filteredCharacters">
                 <h3 class="char-name">{{characters.name}}</h3>
-                <router-link :to="{ name: 'character', params: { id: characters.id}}">
-                <a href="button" class="button1">View Hero</a>
-                </router-link>
+                <div style="text-align: center">
+                    <button class="button1"><router-link :to="{ name: 'character', params: { id: characters.id}}" style="color: white">View Hero</router-link></button>
+                </div>
             </div>
         </div>
     </div>
@@ -189,21 +189,21 @@ export default {
     border-radius: 20px;
     box-sizing: border-box;
     font-family: 'Lucida Console', Monaco, monospace;
-    color:#FFFFFF;
+    background-color:transparent;
     font-size: 22px;
-    text-align:center;
     width: 280px;
     height: 50px;
     margin-top: 35px;
+
 }
 .button1:hover{
-    color:#000000;
-    background-color:#FFFFFF;
+    background-color:grey;
 }
 
 .char-name{
     font-size: 30px;
-    margin-top: 27px
+    margin-top: 27px;
+    color: rgb(30, 31, 30);
 }
 
 </style>
