@@ -14,9 +14,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### To preview the WebApp ->
-https://marvel-search.netlify.app/
